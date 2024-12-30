@@ -1,0 +1,205 @@
+/****************************************************************
+  Button Styles
+****************************************************************/
+.btn-red {
+    -fx-background-color: #c62828;
+}
+.btn-red:hover {
+    -fx-background-color: #d32f2f;
+}
+
+
+
+/****************************************************************
+  Main Styles
+****************************************************************/
+.bg-dark {
+	-fx-background-color: #343843;
+}
+
+.bg-dark-trans {
+	-fx-background-color: rgba(0,0,0,0.7);
+}
+
+.bg-light {
+	-fx-background-color: #eceff1;
+}
+
+.bg-light-gray {
+	-fx-background-color: #607d8b;
+}
+
+.text-light {
+	-fx-text-fill: #eceff1;
+}
+
+.text-dark {
+	-fx-text-fill: black;
+	-fx-effect: dropshadow(gaussian , white , 1, 1, 0, 0);
+}
+
+.sub {
+	-fx-background-size: cover;
+	-fx-background-repeat: no-repeat;
+}
+
+.sub-1 {
+	-fx-background-image: url("../../assets/sub/1.jpg");
+}
+
+.sub-2 {
+	-fx-background-image: url("../../assets/sub/2.jpg");
+}
+
+.sub-3 {
+	-fx-background-image: url("../../assets/sub/3.jpg");
+}
+
+.sub-4 {
+	-fx-background-image: url("../../assets/sub/4.jpg");
+}
+
+.sub-5 {
+	-fx-background-image: url("../../assets/sub/5.jpg");
+}
+
+.sub-6 {
+	-fx-background-image: url("../../assets/sub/6.jpg");
+}
+
+.sub-7 {
+	-fx-background-image: url("../../assets/sub/7.jpg");
+}
+
+.sub-8 {
+	-fx-background-image: url("../../assets/sub/8.jpg");
+}
+
+.sub-9 {
+	-fx-background-image: url("../../assets/sub/9.jpg");
+}
+
+
+
+
+
+/****************************************************************
+  Scroll View Styles
+****************************************************************/
+ListView .list-cell {
+    -fx-background-color: transparent;
+    -fx-text-fill: #eceff1;
+}
+ListView .list-cell:hover {
+    -fx-background-color: #B41221;
+}
+.list-view {
+    -fx-background-color: transparent;
+}
+
+
+/****************************************************************
+  ScrollBar Skin
+****************************************************************/
+ListView .scroll-bar{
+ -fx-background-color: rgb(96,96,96);
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .track,
+.scroll-bar:vertical .track {
+ -fx-background-color: transparent;
+ -fx-border-color:transparent;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .track-background,
+.scroll-bar:horizontal .track-background {
+ -fx-background-color: transparent;
+ -fx-background-insets: 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 4 0 4 0;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:vertical .thumb {
+ -fx-background-color: rgb(211,211,211);
+ -fx-background-insets: 0 4 0 4;
+ -fx-background-radius: 2em;
+}
+.scroll-bar:horizontal .thumb:hover,
+.scroll-bar:vertical .thumb:hover {
+ -fx-background-color: rgb(231,231,231);
+}
+.scroll-bar:horizontal .thumb:pressed,
+.scroll-bar:vertical .thumb:pressed {
+ -fx-background-color: rgb(255,255,255);
+}
+.scroll-bar:vertical .increment-button, .scroll-bar:vertical .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-button, .scroll-bar:horizontal .decrement-button {
+ -fx-background-color:transparent;
+ -fx-background-radius: 2em;
+ -fx-padding: 5;
+}
+.scroll-bar:horizontal .increment-arrow {
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-background-color: rgb(211,211,211);
+ -fx-padding: 0.25em;
+ -fx-rotate: -90;
+}
+.scroll-bar:vertical .increment-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 0;
+}
+.scroll-bar:horizontal .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: 90;
+}
+.scroll-bar:vertical .decrement-arrow {
+ -fx-background-color: rgb(211,211,211);
+ -fx-shape: "M 0 0 L 4 8 L 8 0 Z";
+ -fx-padding: 0.25em;
+ -fx-rotate: -180;
+}
+.scroll-bar:vertical:focused,
+.scroll-bar:horizontal:focused {
+ -fx-background-color: transparent,rgb(96,96,96),rgb(96,96,96);
+}
+/*============*/
+
+.shadow{
+	-fx-effect: dropshadow( three-pass-box , rgba(0,0,0,0.8) , 25, 0.0 , 0.0 , 0 );
+}
+
+.pane{
+    -fx-background-size: 1200 900;
+    -fx-background-radius: 50 50 50 50;
+    -fx-border-radius: 50 50 50 50;
+    -fx-background-color: linear-gradient(to right, #b41221 0%, #ff9999 100%);
+  }
+.textfeild_fill{
+    -fx-background-color: #ffebee;
+}
+
+.btn-login {
+	-fx-background-color: linear-gradient(to right, #cfd8dc 0%, #ffffff 61%);
+	-fx-background-radius: 50%;
+}
+
+.btn-login:hover {
+	-fx-background-color: #cfd8dc;
+}
+
+.user-circle {
+	-fx-background-color: linear-gradient(to left, #cfd8dc 0%, #ffffff 61%);
+	-fx-background-radius: 50%;
+}
+

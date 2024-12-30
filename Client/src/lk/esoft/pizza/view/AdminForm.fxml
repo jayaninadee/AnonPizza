@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="558.0" prefWidth="1213.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/9" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.dinamore.controller.AdminFormController">
+   <children>
+      <AnchorPane layoutX="133.0" layoutY="146.0" prefHeight="523.0" prefWidth="230.0" styleClass="bg-dark" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="212.0" fitWidth="230.0" pickOnBounds="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <image>
+                  <Image url="@../assets/" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="101.0" layoutY="223.0" styleClass="text-light" stylesheets="@style/style.css" text="Order Queue" textFill="#eceff1" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <ListView fx:id="lstOrderQueue" layoutX="7.0" layoutY="262.0" prefHeight="267.0" prefWidth="230.0" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="256.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="230.0" prefHeight="63.0" prefWidth="632.0" styleClass="bg-dark" stylesheets="@style/style.css" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="51.0" fitWidth="37.0" layoutX="14.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblOperatorName" layoutX="57.0" layoutY="12.0" styleClass="text-light" stylesheets="@style/style.css" text="Administrator">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblOperatorUsername" layoutX="58.0" layoutY="32.0" styleClass="text-light" stylesheets="@style/style.css" text="AD">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblDate" layoutX="540.0" layoutY="9.0" styleClass="text-light" stylesheets="@style/style.css" text="2017-01-05" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblTime" layoutX="561.0" layoutY="33.0" styleClass="text-light" stylesheets="@style/style.css" text="12:35:56" AnchorPane.rightAnchor="15.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="201.0" layoutY="15.0" prefHeight="17.0" prefWidth="326.0" styleClass="text-light" stylesheets="@style/style.css" text="Admin Console" AnchorPane.leftAnchor="201.0" AnchorPane.rightAnchor="105.0">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="230.0" layoutY="63.0" prefHeight="200.0" prefWidth="200.0" stylesheets="@style/style.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="230.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="63.0">
+         <children>
+            <AnchorPane layoutX="81.0" layoutY="32.0" prefHeight="99.0" prefWidth="943.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="20.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="14.0" prefHeight="19.0" prefWidth="219.0" text="All Chef Daily Report" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dcAllChef" layoutX="21.0" layoutY="48.0" prefHeight="37.0" prefWidth="381.0" promptText="Select Date" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" />
+                  <JFXButton fx:id="btnAllChefReport" layoutX="743.0" layoutY="48.0" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #e57373;" styleClass="text-light" stylesheets="@style/style.css" text="View Report" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="138.0" prefHeight="123.0" prefWidth="943.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="14.0" prefHeight="19.0" prefWidth="219.0" text="Single Chef Daily Report" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dcSingleChef" layoutX="21.0" layoutY="48.0" prefHeight="37.0" prefWidth="381.0" promptText="Select Date" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" />
+                  <JFXButton fx:id="btnSingleChefReport" layoutX="743.0" layoutY="48.0" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #e57373;" styleClass="text-light" text="View Report" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
+                  <ComboBox fx:id="cmbSelectChef" layoutX="671.0" layoutY="11.0" prefHeight="31.0" prefWidth="239.0" promptText="Select Chef" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="15.0" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="20.0" layoutY="281.0" prefHeight="99.0" prefWidth="943.0" style="-fx-background-color: #e0e0e0;" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+               <children>
+                  <Label layoutX="88.0" layoutY="14.0" prefHeight="19.0" prefWidth="219.0" text="All CallOperator Daily Report" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="10.0">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dcCallOperator" layoutX="21.0" layoutY="48.0" prefHeight="37.0" prefWidth="381.0" promptText="Select Date" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="10.0" />
+                  <JFXButton fx:id="btnAllCallOperatorReport" layoutX="743.0" layoutY="48.0" prefHeight="37.0" prefWidth="354.0" style="-fx-background-color: #e57373;" styleClass="text-light" text="View Report" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="20.0" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
